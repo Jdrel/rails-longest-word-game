@@ -1,0 +1,24 @@
+<h1>New Game</h1>
+<ul class="inline">
+  <% @letters.each do |letter| %>
+  <li class="list-inline-item">
+    <div class="letter">
+      <%= letter %>
+      <div>
+      </li>
+      <% end  %>
+    </ul>
+
+    <form action="<%= score_path %>" method="post">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :letters, @letters %>
+      <div class="form-group">
+        <div class="wrapper">
+          <label for="wordInput">Word</label>
+          <input type="text" name="word" class="form-control" id="wordInput" placeholder="Enter Word">
+          <button type="submit" class="btn btn-primary mb-2">submit</button>
+        </div>
+      </div>
+    </form>
+
+

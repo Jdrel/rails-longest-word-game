@@ -1,0 +1,12 @@
+.letter {
+  background: #6497b1;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper {
+  padding: 10px;
+}
